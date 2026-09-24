@@ -28,15 +28,16 @@ body {
   color: var(--clr-white);
   font-size: 1.0625rem;
   font-weight: 400;
+  color: var(--clr-white);
 }
 
 .header {
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--clr-blue-400);
   font-size: 0.875rem;
+  padding: 1.5rem 3rem;
 }
 
 .header__panel {
@@ -53,7 +54,6 @@ main {
 }
 
 .hero {
-  /* background-color: orange; */
   display: flex;
   width: 100%;
   background-color: var(--clr-blue-400);
@@ -61,22 +61,28 @@ main {
 }
 
 .hero__text-box {
-  /* background-color: pink; */
   flex: 0.9;
   background-color: var(--clr-blue-600);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0rem 3rem;
 }
 
 .hero__heading {
   font-size: clamp(2.25rem, 5vw, 3.5rem);
   font-weight: 500;
   line-height: 1.1;
+  max-width: 11ch;
+}
+
+.hero__description {
+  max-width: 35ch;
+  margin-top: 3rem;
+  line-height: 1.5;
 }
 
 .hero__stat-box {
-  /* background-color: cyan; */
   flex: 1.1;
   display: flex;
   flex-direction: column;
@@ -86,18 +92,9 @@ main {
 
 .hero__stat-row-1,
 .hero__stat-row-2 {
-  /* background-color: yellow; */
   flex: 1;
   display: flex;
   gap: 1px;
-}
-
-.hero__stat-row-1 {
-  /* background-color: brown; */
-}
-
-.hero__stat-row-2 {
-  /* background-color: purple; */
 }
 
 .hero__stat {
@@ -106,10 +103,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.hero__stat-1,
-.hero__stat-3 {
+  padding: 2rem;
 }
 
 .hero__stat-header {
@@ -129,20 +123,28 @@ main {
   font-weight: 500;
 }
 
-.hero__stat-description {
-  font-size: 0.875rem;
-}
-
-.hero__stat-description strong {
+.hero__stat-label {
+  display: block;
   font-size: 1.0625rem;
   font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.hero__stat-text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.hero__description,
+.hero__stat-text {
+  color: var(--clr-blue-200);
 }
 
 .footer {
-  /* background-color: green; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid var(--clr-blue-400);
   font-size: 0.875rem;
+  padding: 1.5rem 3rem;
 }
