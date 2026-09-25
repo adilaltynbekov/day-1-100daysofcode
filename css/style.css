@@ -40,6 +40,32 @@ body {
   padding: 1.5rem 3rem;
 }
 
+/* a {
+  text-decoration: none;
+  color: inherit;
+} */
+
+.header__logo-dot {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--clr-white);
+  transform: translateY(0.0625rem);
+}
+
+.header__logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.header__logo-text {
+  
+}
+
 .header__panel {
   display: none;
 }
