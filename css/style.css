@@ -62,16 +62,31 @@ body {
   color: var(--clr-white);
 }
 
-.header__logo-text {
-  
-}
-
 .header__panel {
   display: none;
 }
 
-.header__menu-btn .header__icon-close {
+.header__icon-close {
   display: none;
+}
+
+.header__menu-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header__menu-btn:hover {
+  opacity: 0.8;
+}
+
+.header__menu-btn:focus-visible {
+  outline: 2px solid var(--clr-blue-200);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 main {
